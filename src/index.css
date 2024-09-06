@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.toaster-container > div > div {
+  background: #02d02b;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.expanded-tr {
+  background-color: #448aff;
+  min-height: 200px;
+}
+
+.expanded-tr > td {
+  width: 100vw;
+}
+
+.expanded-tr .content {
+  background: white;
+  border: 1px solid #000;
+  border-top: none;
+  border-bottom-left-radius: 10px;
+  padding: 10px;
+  margin-left: 40px;
+  margin-right: 0;
+  margin-top: -1px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .expanded-tr .content {
+    flex-direction: column;
+  }
+}
+
+.expanded-tr .content .col {
+  flex: 1;
+  display: inline-block;
+  margin: 5px;
+  width: 100%;
+}
+
+.expanded-tr .content .col:first-child {
+  flex: 2;
+}
+
+.is-canceled {
+  text-decoration: grey line-through 4px;
+}
+
+.row-animate {
+  transition: all 1s ease;
+
+  &:hover {
+    margin-left: -100vw;
+    padding-left: 100vw;
+    color: #fff;
+  }
+}
+
+.bg-Yellow {
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,234,0,1) 50%, rgba(0,0,0,1) 100%);
+  color: #000;
+
+  &:hover {
+    color: #000;
+  }
+}
+.bg-Green {
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(50,205,50,1) 50%, rgba(50,205,50,1) 100%);
+}
+.bg-SuperGreen {
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(57,255,20,1) 50%, rgba(57,255,20,1) 100%);
+}
+.bg-Blue {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 112, 255, 1) 50%,
+    rgba(0, 112, 255, 1) 100%
+  );
+}
+.bg-Red {
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,0,0,1) 50%, rgba(255,0,0,1) 100%);
+}
+
+
+th {
+  border: 1px solid #000;
+  text-align: left;
+  padding: 0 2px;
+}
