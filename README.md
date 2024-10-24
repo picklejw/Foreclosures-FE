@@ -1,4 +1,6 @@
 # Foreclosures-FE
+![ff3](https://github.com/user-attachments/assets/d9bc835a-02b2-4818-bdc9-822ec876b7e0)
+
 Built with GraphQL (Apollo), TS and React. This app helps me do research and keep notes for foreclosure listings in my area. Here are some key features this code does:
 1) Updates listings that are new or canceled listings from an upstream source so I know when I need to do research or if a listing is no longer active.
 2) Keeps a todo list styled finance section for updating other debts like other mortgages and other leins like a builders lein or utilities. This also can record back tax information.
